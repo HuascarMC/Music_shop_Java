@@ -3,31 +3,34 @@ package com.example.huascar.raysmusicexchange;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
+
 /**
  * Created by huascar on 03/11/2017.
  */
 
-public class HangDrumTest {
+public class SitarTest {
 
-    HangDrum hangDrum;
+    Sitar sitar;
 
     @Before
     public void before() {
-        hangDrum = new HangDrum("Internal hang", "Steel", "D");
+        sitar = new Sitar("Gayaki", "Toon wood", 21);
     }
 
     @Test
     public void TestgetType() {
-        assertEquals("Internal hang", hangDrum.getType());
+        assertEquals("Gayaki", sitar.getType());
     }
 
     @Test
     public void TestgetMaterial() {
-        assertEquals("Steel", hangDrum.getMaterial());
+        assertEquals("Toon wood", sitar.getMaterial());
     }
 
     @Test
-    public void TestgetTune() {
-        assertEquals("D", hangDrum.getTune());
+    public void TestgetNumberOfStrings() {
+        assertEquals(21, sitar.getNumberOfStrings());
     }
+
+
 }

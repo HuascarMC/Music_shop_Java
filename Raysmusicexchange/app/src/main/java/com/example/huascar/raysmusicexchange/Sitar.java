@@ -19,4 +19,8 @@ public class Sitar extends Instrument implements Playable {
     public void Sell() {
 
     }
+
+    public int getNumberOfStrings() {
+        return NumberOfStrings;
+    }
 }
