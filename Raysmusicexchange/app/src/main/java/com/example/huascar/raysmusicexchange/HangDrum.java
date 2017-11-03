@@ -6,4 +6,8 @@ package com.example.huascar.raysmusicexchange;
 
 public class HangDrum {
     private String Tune;
+
+    public HangDrum(String Tune) {
+        this.Tune = Tune;
+    }
 }
