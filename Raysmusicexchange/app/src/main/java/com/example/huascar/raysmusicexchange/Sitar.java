@@ -7,7 +7,8 @@ package com.example.huascar.raysmusicexchange;
 public class Sitar extends Instrument implements Playable {
     private int NumberOfStrings;
 
-    public Sitar(int NumberOfStrings) {
+    public Sitar(String Type, String Material, int NumberOfStrings) {
+        super(Type, Material);
         this.NumberOfStrings = NumberOfStrings;
     }
 
