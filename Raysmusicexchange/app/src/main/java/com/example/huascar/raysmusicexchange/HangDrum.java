@@ -7,7 +7,8 @@ package com.example.huascar.raysmusicexchange;
 public class HangDrum extends Instrument implements Playable {
     private String Tune;
 
-    public HangDrum(String Tune) {
+    public HangDrum(String Type, String Material, String Tune) {
+        super(Type, Material);
         this.Tune = Tune;
     }
 
