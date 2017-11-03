@@ -33,4 +33,10 @@ public class ShopTest {
         assertEquals(1, shop.getStockSize());
     }
 
+    @Test
+    public void TestDeleteItem() {
+        shop.deleteItem(drumsticks);
+        assertEquals(0, shop.getStockSize());
+    }
+
 }

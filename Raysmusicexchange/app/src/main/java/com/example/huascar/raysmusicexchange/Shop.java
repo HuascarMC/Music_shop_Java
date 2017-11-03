@@ -24,4 +24,7 @@ public class Shop {
         Stock.add(item);
     }
 
+    public void deleteItem(Item item) {
+        Stock.remove(item);
+    }
 }
