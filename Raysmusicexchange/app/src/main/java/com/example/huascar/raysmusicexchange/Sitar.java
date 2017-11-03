@@ -9,6 +9,8 @@ public class Sitar extends Instrument implements Playable {
 
     public Sitar(String Type, String Material, int NumberOfStrings) {
         super(Type, Material);
+
+
         this.NumberOfStrings = NumberOfStrings;
     }
 
