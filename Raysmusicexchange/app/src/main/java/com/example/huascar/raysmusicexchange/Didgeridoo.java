@@ -10,4 +10,8 @@ public class Didgeridoo implements Playable {
     public Didgeridoo(String Tune) {
         this.Tune = Tune;
     }
+
+    public String Play() {
+        return "Brrroooop!!";
+    }
 }
