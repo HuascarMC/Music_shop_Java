@@ -6,4 +6,8 @@ package com.example.huascar.raysmusicexchange;
 
 public class Sitar {
     private int NumberOfStrings;
+
+    public Sitar(int NumberOfStrings) {
+        this.NumberOfStrings = NumberOfStrings;
+    }
 }
