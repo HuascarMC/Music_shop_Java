@@ -7,5 +7,7 @@ package com.example.huascar.raysmusicexchange;
 public class Didgeridoo implements Playable {
     private String Tune;
 
- 
+    public Didgeridoo(String Tune) {
+        this.Tune = Tune;
+    }
 }
