@@ -12,4 +12,12 @@ public abstract class Instrument implements Sellable {
         this.Type = Type;
         this.Material = Material;
     }
+
+    public String getType() {
+        return Type;
+    }
+
+    public String getMaterial() {
+        return Material;
+    }
 }

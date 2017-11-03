@@ -19,4 +19,8 @@ public class Didgeridoo extends Instrument implements Playable {
     public void Sell() {
 
     }
+
+    public String getTune() {
+        return Tune;
+    }
 }
