@@ -15,4 +15,8 @@ public class HangDrum extends Instrument implements Playable {
     public String Play() {
         return "Tuuuuuuummmm!";
     }
+
+    public void Sell() {
+
+    }
 }

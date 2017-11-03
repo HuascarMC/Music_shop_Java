@@ -15,4 +15,8 @@ public class Guitar extends Instrument implements Playable {
     public String Play() {
         return "Breeeeeemm!";
     }
+
+    public void Sell() {
+
+    }
 }
