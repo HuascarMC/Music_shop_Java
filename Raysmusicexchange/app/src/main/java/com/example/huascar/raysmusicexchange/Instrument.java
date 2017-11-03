@@ -7,4 +7,9 @@ package com.example.huascar.raysmusicexchange;
 public abstract class Instrument {
     private String Type;
     private String Material;
+
+    public Instrument(String Type, String Material) {
+        this.Type = Type;
+        this.Material = Material;
+    }
 }
