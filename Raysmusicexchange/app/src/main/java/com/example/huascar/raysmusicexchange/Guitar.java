@@ -10,4 +10,8 @@ public class Guitar implements Playable {
     public Guitar(int NumberOfStrings) {
         this.NumberOfStrings = NumberOfStrings;
     }
+
+    public String Play() {
+        return "Breeeeeemm!";
+    }
 }
