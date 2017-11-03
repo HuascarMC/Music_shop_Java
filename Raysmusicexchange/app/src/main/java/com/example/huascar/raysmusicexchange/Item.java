@@ -14,4 +14,16 @@ public class Item {
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
     }
+
+    public String getType() {
+        return Type;
+    }
+
+    public double getbuyPrice() {
+        return buyPrice;
+    }
+
+    public double getsellPrice() {
+        return sellPrice;
+    }
 }
