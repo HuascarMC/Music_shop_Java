@@ -10,11 +10,11 @@ import static org.junit.Assert.*;
 
 public class DrumsticksTest {
 
-    Drumsticks drumSticks;
+    DrumSticks drumSticks;
 
     @Before
     public void before() {
-        drumSticks = new Drumsticks("Wooden", 10, 17);
+        drumSticks = new DrumSticks("Wooden", 10, 17);
     }
 
     @Test
