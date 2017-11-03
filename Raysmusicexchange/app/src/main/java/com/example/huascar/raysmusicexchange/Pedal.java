@@ -10,6 +10,6 @@ public class Pedal extends Item implements Sellable {
     }
 
     public void Sell() {
-        
+
     }
 }
