@@ -31,5 +31,12 @@ public class GuitarStringsTest {
         @Test
         public void TestgetsellPrice() {
             assertEquals(11.00, guitarStrings.getsellPrice(), 0.01);
+
+
         }
+        @Test
+          public void TestGetMarkup() {
+            assertEquals(5, guitarStrings.getMarkUp(), 0.01);
+        }
+
     }

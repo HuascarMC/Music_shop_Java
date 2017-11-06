@@ -16,10 +16,16 @@ public class ShopTest {
     Shop shop;
     ArrayList<Item> Stock = new ArrayList<Item>();
     DrumSticks drumsticks;
+    GuitarStrings guitarStrings;
+    Pedal pedal;
 
     @Before
     public void before() {
         shop = new Shop(Stock);
+        drumsticks = new DrumSticks("Wooden", 10, 1);
+        guitarStrings = new GuitarStrings("Bronze", 6, 11);
+        pedal = new Pedal("Loop", 50.00, 99.00);
+
     }
 
     @Test
@@ -39,4 +45,11 @@ public class ShopTest {
         assertEquals(0, shop.getStockSize());
     }
 
+    @Test
+    public void TestPotentialProfit() {
+        shop.addItem(drumsticks);
+        shop.addItem(guitarStrings);
+        shop.addItem(pedal);
+        assertEquals(45.00, shop.potentialProfit(), 0.01);
+    }
 }

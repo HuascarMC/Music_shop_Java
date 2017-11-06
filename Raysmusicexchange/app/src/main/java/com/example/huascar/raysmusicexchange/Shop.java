@@ -1,6 +1,5 @@
 package com.example.huascar.raysmusicexchange;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -9,22 +8,31 @@ import java.util.ArrayList;
 
 public class Shop {
 
-    private ArrayList<Item> Stock = new ArrayList<Item>();
+    private ArrayList<Item> stock;
 
 
-    public Shop(ArrayList<Item> Stock) {
-        this.Stock = Stock;
+    public Shop(ArrayList<Item> stock) {
+        this.stock = stock;
     }
 
     public int getStockSize() {
-        return Stock.size();
+        return stock.size();
     }
 
     public void addItem(Item item) {
-        Stock.add(item);
+        stock.add(item);
     }
 
     public void deleteItem(Item item) {
-        Stock.remove(item);
+        stock.remove(item);
+    }
+
+    public double potentialProfit() {
+        double profit = 0;
+        for (Item accessory : stock) {
+           profit += accessory.getMarkUp();
+
+        }
+        return profit;
     }
 }

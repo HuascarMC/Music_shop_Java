@@ -20,7 +20,7 @@ public class PedalTest {
 
         @Test
         public void TestgetType() {
-            assertEquals("Wooden", pedal.getType());
+            assertEquals("Loop", pedal.getType());
         }
 
         @Test
@@ -32,5 +32,8 @@ public class PedalTest {
         public void TestgetsellPrice() {
             assertEquals(99.00, pedal.getsellPrice(), 0.01);
         }
+
+        @Test
+        public void TestgetMarkUp() {assertEquals(49.00, pedal.getMarkUp(), 0.01);}
     }
 

@@ -18,17 +18,20 @@ public class DidgeridooTest {
     }
 
     @Test
-    public void getType() {
+    public void TestgetType() {
         assertEquals("Aboriginal", didgeridoo.getType());
     }
 
     @Test
-    public void getMaterial() {
+    public void TestgetMaterial() {
         assertEquals("Bamboo", didgeridoo.getMaterial());
     }
 
     @Test
-    public void getTune() {
+    public void TestgetTune() {
         assertEquals("D", didgeridoo.getTune());
     }
+
+
+
 }

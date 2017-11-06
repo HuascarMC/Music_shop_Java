@@ -1,5 +1,7 @@
 package com.example.huascar.raysmusicexchange;
 
+import java.util.ArrayList;
+
 /**
  * Created by huascar on 03/11/2017.
  */
@@ -25,5 +27,9 @@ public class Item {
 
     public double getsellPrice() {
         return sellPrice;
+    }
+
+    public double getMarkUp() {
+        return (sellPrice - buyPrice);
     }
 }
